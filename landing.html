@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><link rel="stylesheet" href="landing.css">
+    <link rel="stylesheet" href="http://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PicQuery</title>
+</head>
+<body>
+
+    <div id="hero">
+        <section class="home">
+
+        <div class="form_container" id="form_container_id ">
+
+            <!-- Login form -->
+
+
+            <div class="form login_form" id="login_form_id">
+                <i class="uil uil-times form_close" onclick="closeForm()"></i>
+                <form action="login.php" method="POST">  <!-- sending inputs to PHP server -->
+                    <h2>login</h2>
+                    
+                    <div class="input_box">
+                        <input type="email" placeholder="Enter your email" required name="email" />
+                        <i class="uil uil-envelope-alt email"></i>
+                    </div>
+                    <div class="input_box">
+                        <input type="password" placeholder="Enter your password" required name="password" />
+                        <i class="uil uil-lock password"></i>
+                        <i class="uil uil-eye-slash pw_hide"></i>
+                    </div>
+                    <div class="option_field">
+                        <span class="checkbox">
+                            <imput type="checkbox" id="check">
+                                <label for="check"> Remember me </label>
+                            </imput>
+                        </span>
+                        <a href="#" class="forgot_pw">Forgot Password?</a>
+                    </div>
+                    <button class="button" id="form-open">Login</button>
+
+                    <div class="login_signup">
+                        Don't have an account? <a href="#" id="signup" onclick="signUpScreen()">Signup</a></div>
+                    </form>
+            </div>
+
+            <!-- Signup form -->
+
+            <div class="form signup_form" id="signup_form_id">
+                <i class="uil uil-times form_close" onclick="closeForm()"></i>
+                <form action="signup.php" method="POST">
+                    <h2>Signup</h2>
+                    
+                    <div class="input_box">
+                        <input type="email" placeholder="Enter your email"  required name="email"/>
+                        <i class="uil uil-envelope-alt email"></i>
+                    </div>
+
+                    <div class="input_box">
+                        <input type="password" placeholder="Create your password" required name="password"/>
+                        <i class="uil uil-lock password"></i>
+                        <i class="uil uil-eye-slash pw_hide"></i>
+                    </div>
+
+                    <div class="input_box">
+                        <input type="password" placeholder="Confirm your password" required name="password"/>
+                        <i class="uil uil-lock password"></i>
+                        <i class="uil uil-eye-slash pw_hide"></i>
+                    </div>
+
+                    <button class="button">Signup Now</button>
+
+                    <div class="login_signup">
+                        Already have an account? <a href="#" id="login">Login</a></div>
+                    </form>
+            </div>
+        </div>
+        </section>
+
+
+
+        
+
+        <div class="navbar">
+            <img src="logo.png" class="logo">
+            <div class="user">
+                
+                
+                <a href="#Explore"><button class="explo">Explore</button></a>
+                
+                
+                <button type="button" class="login" id="form-open" onclick="showForm()">login</button>
+                <button type="button" class="signupbtn" id="signup-btn" onclick="signUpScreen()">Sign UP</button>
+                </div>
+            </div>
+        </div>
+        
+        
+
+        <div id="secondpg">
+            <div class="navbar2">
+        <section id="Explore">
+            <h1 class="Exp" style="padding-left: 135px;">Explore</h1>
+            
+            
+            
+            <div class="main">
+                <div class="main2">
+            <div class="container-2">
+                <a href="white/white.html">
+                  <div class="box">
+                    <div class="imgBx">
+                        <img src="white-show.jpg" style="width: 500px; height: 350;">
+                    </div>
+                    <div class="content">
+                        <div>
+                            <h2>White</h2>
+                            <p>Transform your digital space with <br> serene vistas and vibrantwildlife.</p>
+                        </div>
+                    </div>
+                  </div>
+                </a>
+                <a href="Architecture/arechitecure.html">
+                  <div class="box">
+                    <div class="imgBx">
+                        <img src="pattern.jpg" style="width: 500px; height: 350;">
+                    </div>
+                    <div class="content">
+                        <div>
+                            <h2>Architecture</h2>
+                            <p>Elevate your space with captivating <br> designs, from minimalistic geometrics <br> to intricate motifs.</p>
+                        </div>
+                      </div>
+                  </div>
+                </a>
+                <a href="Amoled/amoled.html">                  
+                  <div class="box">
+                    <div class="imgBx">
+                        <img src="amoled.jpg" style="width: 500px; height: 350;">
+                    </div>
+                    <div class="content">
+                        <div>
+                            <h2>Amoled</h2>
+                            <p>Experience deep blacks and vibrant<br> colors, enhancing your screen with <br>visually stunning and energy-efficient designs</p>
+                        </div>
+                    </div>
+                  </div>
+                </a>
+                <a href="Birds/birds.html">                
+                  <div class="box">
+                    <div class="imgBx">
+                        <img src="Birds.jpg" style="width: 500px; height: 350;">
+                    </div>
+                    <div class="content">
+                        <div>
+                            <h2>Birds</h2>
+                            <p>ransform your screen with captivating<br> avian beauty, showcasing a variety of species in their natural splendor.</p>
+                        </div>
+                    </div>
+                  </div>
+                </a>
+            </div>
+            </div>
+            </div>
+
+
+
+
+            <!-- Second Catogaries -->
+
+
+            <div class="main">
+                <div class="main2">
+            <div class="container-2">
+                <a href="landscape/land.html">
+                  <div class="box">
+                    <div class="imgBx">
+                        <img src="landscape.jpg" style="width: 500px; height: 350;">
+                    </div>
+                    <div class="content">
+                        <div>
+                            <h2>Landscape</h2>
+                            <p>Adorn your screen with breathtaking<br> nature panoramas, from majestic<br> mountains to tranquil meadows.</p>
+                        </div>
+                    </div>
+                  </div>
+                </a>
+                <a href="earth/earth.html">  
+                  <div class="box">
+                    <div class="imgBx">
+                        <img src="earth.jpg" style="width: 500px; height: 350;">
+                    </div>
+                    <div class="content">
+                        <div>
+                            <h2>Earth</h2>
+                            <p>Capture the essence of Earth with our planet-themed wallpapers.</p>
+                        </div>
+                      </div>
+                  </div>
+                </a>
+                <a href="sea/sea.html">                
+                  <div class="box">
+                    <div class="imgBx">
+                        <img src="seascapes.jpg" style="width: 500px; height: 350;">
+                    </div>
+                    <div class="content">
+                        <div>
+                            <h2>Seascapes</h2>
+                            <p>Infuse your screen with the tranquility of ocean views, capturing the beauty and serenity of aquatic vistas.</p>
+                        </div>
+                    </div>
+                  </div>
+                </a>
+                <a href="solid/solid.html">                
+                  <div class="box">
+                    <div class="imgBx">
+                        <img src="solid.jpg" style="width: 500px; height: 350;">
+                    </div>
+                    <div class="content">
+                        <div>
+                            <h2>Solid</h2>
+                            <p>Choose from a spectrum of hues to<br> add simplicity or vibrancy to your digital space.</p>
+                        </div>
+                    </div>
+                  </div>
+                </a>
+            </div>
+            </div>
+            </div>                
+                    
+            
+       </section>
+
+        
+        
+        </div>
+        </div>
+
+
+        <div class="container">
+            <div class="info">
+                <h1>PicQuery</h1>
+                <br>
+                <p>A place where you can find various kind of wallpaper to make your<br>boaring looking home screen better. You can find here all kind of<br> wallpapers including Natural Wallpapers, Abstract Wallpapers,<br> Amoled Wallpapers, and many more...</p>
+                <input type="text" placeholder="Explore Wallpapers">
+
+            </div>
+        </div>
+
+        <div class="slider">
+            <img src="left-arrow.png" id="prev">
+            <div class="preview">
+                <img src="small1.png" class="active thumbnail">
+                <img src="small2.png" class="thumbnail">
+                <img src="small3.png" class="thumbnail">
+                <img src="small4.png" class="thumbnail">
+                <img src="small5.png" class="thumbnail">
+            </div>
+            <img src="right-arrow.png" id="next">
+
+        </div>
+
+    </div>
+
+    <script>
+        var prev = document.getElementById("prev");
+        var next = document.getElementById("next");
+        var thumbnail = document.getElementsByClassName("thumbnail");
+        var hero = document.getElementById("hero");
+
+        var backgroundImg = new Array(
+            "/bg8.png",
+            "/bg2.png",
+            "/bg3.png",
+            "/bg4.png",
+            "/bg5.png",
+        );
+        let i = 0;
+        next.onclick = function(){
+            if(i < 4){
+                hero.style.backgroundImage = `url(${backgroundImg[i+1]})`;
+                thumbnail[i+1].classList.add("active");
+                thumbnail[i].classList.remove("active");
+            i++;
+            }
+            
+        }
+
+        prev.onclick = function(){
+            if(i > 0){
+                hero.style.backgroundImage = 'url("'+backgroundImg[i-1]+'")';
+                thumbnail[i-1].classList.add("active");
+                thumbnail[i].classList.remove("active");
+            i--;
+            }
+            
+        }
+        function showForm(){
+           document.getElementById('login_form_id').style.display = "inline";
+           console.log('hi puru')
+        }
+        function closeForm(){
+           document.getElementById('login_form_id').style.display = "none";
+           document.getElementById('signup_form_id').style.display = "none";
+           console.log('hi puru')
+        }
+
+        function signUpScreen(){
+           document.getElementById('signup_form_id').style.display = "inline";
+           document.getElementById('login_form_id').style.display = "none";
+        }
+
+
+    </script>
+    
+
+
+</body>
+</html>
