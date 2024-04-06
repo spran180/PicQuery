@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="http://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PicQuery</title>
+    <title>AuctionHub</title>
 </head>
 <body>
 
@@ -91,7 +91,7 @@
                 
                 
                 <button type="button" class="login" id="form-open" onclick="showForm()">login</button>
-                <button type="button" class="signupbtn" id="signup-btn" onclick="signUpScreen()">Signup</button>
+                <button type="button" class="signupbtn" id="signup-btn" onclick="signUpScreen()">SignUP</button>
                 </div>
             </div>
         </div>
@@ -240,26 +240,16 @@
 
         <div class="container">
             <div class="info">
-                <h1>PicQuery</h1>
+                <h1>Auction</h1>
+                <h1>Hub</h1>
                 <br>
-                <p>A place where you can find various kind of wallpaper to make your<br>boaring looking home screen better. You can find here all kind of<br> wallpapers including Natural Wallpapers, Abstract Wallpapers,<br> Amoled Wallpapers, and many more...</p>
-                <input type="text" placeholder="Explore Wallpapers">
+                <p>Welcome to AuctionHub, your ultimate destination for online auctions. <br> Explore a diverse range of items, sell with confidence, and enjoy a seamless bidding experience. <br> Join our vibrant community today!</p>
+                <input type="text" placeholder="Explore Items">
 
             </div>
         </div>
 
-        <div class="slider">
-            <img src="left-arrow.png" id="prev">
-            <div class="preview">
-                <img src="small1.png" class="active thumbnail">
-                <img src="small2.png" class="thumbnail">
-                <img src="small3.png" class="thumbnail">
-                <img src="small4.png" class="thumbnail">
-                <img src="small5.png" class="thumbnail">
-            </div>
-            <img src="right-arrow.png" id="next">
-
-        </div>
+        
 
     </div>
 
@@ -269,33 +259,7 @@
         var thumbnail = document.getElementsByClassName("thumbnail");
         var hero = document.getElementById("hero");
 
-        var backgroundImg = new Array(
-            "/bg8.png",
-            "/bg2.png",
-            "/bg3.png",
-            "/bg4.png",
-            "/bg5.png",
-        );
-        let i = 0;
-        next.onclick = function(){
-            if(i < 4){
-                hero.style.backgroundImage = `url(${backgroundImg[i+1]})`;
-                thumbnail[i+1].classList.add("active");
-                thumbnail[i].classList.remove("active");
-            i++;
-            }
-            
-        }
-
-        prev.onclick = function(){
-            if(i > 0){
-                hero.style.backgroundImage = 'url("'+backgroundImg[i-1]+'")';
-                thumbnail[i-1].classList.add("active");
-                thumbnail[i].classList.remove("active");
-            i--;
-            }
-            
-        }
+        
         function showForm(){
            document.getElementById('login_form_id').style.display = "inline";
            console.log('hi puru')
